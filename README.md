@@ -27,9 +27,9 @@ The "news_summary.csv" dataset is a comprehensive collection of news articles an
 * BART is pretrained on a denoising autoencoder task, which involves corrupting and then reconstructing sentences. This pretraining helps the model capture the structure and content of text. Fine-tuning BART on summarization tasks refines its ability to generate coherent and informative summaries.
 
 ## Evaluation Metrics
-* ROUGE Scores:
+### ROUGE Scores:
   
-1. The ROUGE scores for the BART model's summarization are as follows:
+### 1. The ROUGE scores for the BART model's summarization are as follows:
 
 - ROUGE-1:
   - Recall (R): 0.6154
@@ -46,9 +46,8 @@ The "news_summary.csv" dataset is a comprehensive collection of news articles an
   - Precision (P): 0.1458
   - F1-Score (F): 0.2295
 
-These ROUGE scores provide an evaluation of the quality of the generated summaries produced by the BART model. They assess how well the generated summaries match the reference summaries in terms of recall, precision, and F1-score for different n-gram levels and the longest common subsequence. Higher ROUGE scores generally indicate better summarization performance. Keep in mind that the specific threshold for good scores can vary based on the specific task and dataset.
 
-2. The ROUGE scores for the T5 model's summarization are as follows:
+### 2. The ROUGE scores for the T5 model's summarization are as follows:
 
 - ROUGE-1:
   - Recall (R): 0.4615
@@ -64,5 +63,3 @@ These ROUGE scores provide an evaluation of the quality of the generated summari
   - Recall (R): 0.3846
   - Precision (P): 0.2000
   - F1-Score (F): 0.2632
-
-Similar to the BART model, these ROUGE scores provide an evaluation of the quality of the generated summaries produced by the T5 model. They assess how well the generated summaries match the reference summaries in terms of recall, precision, and F1-score for different n-gram levels and the longest common subsequence. Higher ROUGE scores generally indicate better summarization performance, but the interpretation of what constitutes a "good" score can depend on the specific context and task.
